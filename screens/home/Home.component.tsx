@@ -1,5 +1,5 @@
+import { Text } from 'react-native'
 import * as S from './home.styles'
-import {Text} from 'react-native'
 
 export interface HomeProps {
   testId?: string
