@@ -1,6 +1,6 @@
 import {
   ColorSchemeName,
-  useColorScheme as _useColorScheme,
+  useColorScheme as _useColorScheme
 } from 'react-native'
 
 // The useColorScheme value is always either light or dark, but the built-in

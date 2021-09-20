@@ -1,14 +1,14 @@
 import { render, waitFor } from '@testing-library/react-native'
 import * as React from 'react'
-import { Home } from './Home.component'
+import { Details } from './Details.component'
 
 // import theme from '../../styles/Theme'
 
-describe('<Home />', () => {
-  const testId = 'component-home-id'
+describe('<Details />', () => {
+  const testId = 'component-details-id'
 
-  it('should render the Home component', async () => {
-    const { queryByTestId, toJSON } = render(<Home testId={testId} />)
+  it('should render the Details component', async () => {
+    const { queryByTestId, toJSON } = render(<Details testId={testId} />)
     await waitFor(() => expect(queryByTestId(testId)).toBeTruthy())
     expect(toJSON()).toMatchSnapshot()
   })
