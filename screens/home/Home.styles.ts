@@ -6,8 +6,8 @@ export const Wrapper = styled.View`
   ${() => css`
     flex: 1;
     background-color: blue;
-    width: 85px;
-    height: 60px;
+    width: 100%;
+    height: 100%;
   `}
 `
 
