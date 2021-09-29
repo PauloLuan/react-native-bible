@@ -1,5 +1,5 @@
 import * as React from 'react'
-import { Text } from 'react-native'
+import { Button, Text } from 'react-native'
 import * as S from './home.styles'
 
 export interface HomeProps {
@@ -11,6 +11,8 @@ export const Home = ({ testId = 'component-home-id', ...props }: HomeProps) => {
     <>
       <S.Wrapper testID={testId} {...props}>
         <Text>example</Text>
+
+        <Button title="teste" onPress={() => console.log('teste')}></Button>
       </S.Wrapper>
     </>
   )
