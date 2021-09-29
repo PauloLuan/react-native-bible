@@ -12,7 +12,7 @@ export const Details = ({
   return (
     <>
       <S.Wrapper testID={testId} {...props}>
-        Body...
+        <S.Text>Body...</S.Text>
       </S.Wrapper>
     </>
   )

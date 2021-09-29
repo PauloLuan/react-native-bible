@@ -10,3 +10,7 @@ export const Wrapper = styled.View`
     height: 60px;
   `}
 `
+
+export const Text = styled.Text`
+  color: red;
+`
