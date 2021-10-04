@@ -1,0 +1,154 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<Details /> should render the Details component 1`] = `
+<View
+  style={
+    Array [
+      Object {
+        "backgroundColor": "#f3f4f6",
+        "flexBasis": 0,
+        "flexGrow": 1,
+        "flexShrink": 1,
+        "height": "100%",
+        "paddingBottom": 24,
+        "paddingLeft": 24,
+        "paddingRight": 24,
+        "paddingTop": 24,
+        "width": "100%",
+      },
+    ]
+  }
+  testID="component-details-id"
+>
+  <Text
+    style={
+      Array [
+        Object {
+          "fontFamily": "Arial",
+          "fontSize": 98,
+          "fontWeight": "bold",
+        },
+      ]
+    }
+  >
+    Genesis
+  </Text>
+  <Text
+    style={
+      Array [
+        Object {
+          "color": "black",
+          "fontSize": 43,
+          "fontStyle": "italic",
+          "fontWeight": "200",
+          "marginBottom": 51,
+        },
+      ]
+    }
+  >
+    Subheadline
+  </Text>
+  <Text
+    style={
+      Array [
+        Object {
+          "color": "black",
+          "fontSize": 31,
+          "fontWeight": "300",
+          "marginBottom": 4,
+          "marginLeft": 0,
+          "marginRight": 0,
+          "marginTop": 4,
+        },
+      ]
+    }
+  >
+    No princípio Deus criou os céus e a terra.
+  </Text>
+  <Text
+    style={
+      Array [
+        Object {
+          "color": "black",
+          "fontSize": 31,
+          "fontWeight": "300",
+          "marginBottom": 4,
+          "marginLeft": 0,
+          "marginRight": 0,
+          "marginTop": 4,
+        },
+      ]
+    }
+  >
+    Era a terra sem forma e vazia; trevas cobriam a face do abismo, e o Espírito de Deus se movia sobre a face das águas.
+  </Text>
+  <Text
+    style={
+      Array [
+        Object {
+          "color": "black",
+          "fontSize": 31,
+          "fontWeight": "300",
+          "marginBottom": 4,
+          "marginLeft": 0,
+          "marginRight": 0,
+          "marginTop": 4,
+        },
+      ]
+    }
+  >
+    Disse Deus: "Haja luz", e houve luz.
+  </Text>
+  <Text
+    style={
+      Array [
+        Object {
+          "color": "black",
+          "fontSize": 31,
+          "fontWeight": "300",
+          "marginBottom": 4,
+          "marginLeft": 0,
+          "marginRight": 0,
+          "marginTop": 4,
+        },
+      ]
+    }
+  >
+    Deus viu que a luz era boa, e separou a luz das trevas.
+  </Text>
+  <Text
+    style={
+      Array [
+        Object {
+          "color": "black",
+          "fontSize": 31,
+          "fontWeight": "300",
+          "marginBottom": 4,
+          "marginLeft": 0,
+          "marginRight": 0,
+          "marginTop": 4,
+        },
+      ]
+    }
+  >
+    Deus chamou à luz dia, e às trevas chamou noite. Passaram-se a tarde e a manhã; esse foi o primeiro dia.
+  </Text>
+  <Text
+    style={
+      Array [
+        Object {
+          "color": "black",
+          "fontSize": 31,
+          "fontWeight": "300",
+          "marginBottom": 4,
+          "marginLeft": 0,
+          "marginRight": 0,
+          "marginTop": 4,
+        },
+      ]
+    }
+  >
+    Depois disse Deus: "Haja entre as águas um firmamento que separe águas de águas".
+  </Text>
+</View>
+`;

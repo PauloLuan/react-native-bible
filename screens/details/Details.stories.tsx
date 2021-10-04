@@ -1,7 +1,6 @@
-import React from 'react'
-import { action } from '@storybook/addon-actions'
 import { storiesOf } from '@storybook/react-native'
-import { Details, DetailsProps } from '.'
+import React from 'react'
+import { Details } from '.'
 
 const args = {}
 
