@@ -1,10 +1,15 @@
-import React from 'react'
-import { action } from '@storybook/addon-actions'
 import { storiesOf } from '@storybook/react-native'
-import { Home, HomeProps } from '.'
+import React from 'react'
+import { ThemeProvider } from 'styled-components/native'
+import { Home } from '.'
+import theme from '../../global/styles/theme'
 
 const args = {}
 
 storiesOf('Components/Home', module)
   //.addDecorator((getStory) => <CenterView>{getStory()}</CenterView>)
-  .add('default: ', () => <Home />)
+  .add('default: ', () => (
+    <ThemeProvider theme={theme}>
+      <Home />
+    </ThemeProvider>
+  ))

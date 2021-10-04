@@ -5,7 +5,7 @@ import { ThemeProvider } from 'styled-components/native'
 import theme from './global/styles/theme'
 import useCachedResources from './hooks/useCachedResources'
 import useColorScheme from './hooks/useColorScheme'
-import Navigation from './navigation'
+// import Navigation from './navigation'
 import { StorybookUIRoot } from './storybook'
 
 export default function App() {
