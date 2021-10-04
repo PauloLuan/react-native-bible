@@ -7,5 +7,4 @@ const args = {}
 
 storiesOf('Components/Home', module)
   //.addDecorator((getStory) => <CenterView>{getStory()}</CenterView>)
-  .add('default: ', () => <Home {...args} />)
-  .add('with some modification: ', () => <Home {...args} />)
+  .add('default: ', () => <Home />)
