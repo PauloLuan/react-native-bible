@@ -1,6 +1,7 @@
 {
   "main": "node_modules/expo/AppEntry.js",
   "scripts": {
+    "dev": "concurrently \"yarn storybook\" \"yarn ios\"",
     "start": "expo start",
     "expo:cache": "expo r -c",
     "format": "eslint --fix . --ext .js,.jsx,.ts,.tsx",
@@ -79,6 +80,7 @@
     "@typescript-eslint/parser": "^4.31.1",
     "babel-loader": "^8.2.2",
     "babel-plugin-styled-components": "^1.13.2",
+    "concurrently": "^6.3.0",
     "eslint": "^7.2.0",
     "eslint-config-airbnb": "18.2.1",
     "eslint-config-prettier": "^8.3.0",
