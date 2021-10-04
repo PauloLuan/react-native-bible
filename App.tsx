@@ -1,26 +1,33 @@
-import { ThemeProvider } from 'styled-components/native'
-import theme from './global/styles/theme'
+// import { ThemeProvider } from 'styled-components/native'
+// import theme from './global/styles/theme'
 
-import { StatusBar } from 'expo-status-bar'
+// import { StatusBar } from 'expo-status-bar'
+// import * as React from 'react'
+// import { SafeAreaProvider } from 'react-native-safe-area-context'
+// import useCachedResources from './hooks/useCachedResources'
+// import useColorScheme from './hooks/useColorScheme'
+// import Navigation from './navigation'
+
+// export default function App() {
+//   const isLoadingComplete = useCachedResources()
+//   const colorScheme = useColorScheme()
+
+//   if (!isLoadingComplete) {
+//     return null
+//   }
+//   return (
+//     <ThemeProvider theme={theme}>
+//       <SafeAreaProvider>
+//         <Navigation colorScheme={colorScheme} />
+//         <StatusBar />
+//       </SafeAreaProvider>
+//     </ThemeProvider>
+//   )
+// }
+
 import * as React from 'react'
-import { SafeAreaProvider } from 'react-native-safe-area-context'
-import useCachedResources from './hooks/useCachedResources'
-import useColorScheme from './hooks/useColorScheme'
-import Navigation from './navigation'
+import StorybookUIRoot from './storybook'
 
-export default function App() {
-  const isLoadingComplete = useCachedResources()
-  const colorScheme = useColorScheme()
-
-  if (!isLoadingComplete) {
-    return null
-  }
-  return (
-    <ThemeProvider theme={theme}>
-      <SafeAreaProvider>
-        <Navigation colorScheme={colorScheme} />
-        <StatusBar />
-      </SafeAreaProvider>
-    </ThemeProvider>
-  )
+export default function LinksScreen() {
+  return <StorybookUIRoot />
 }

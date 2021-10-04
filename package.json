@@ -8,10 +8,31 @@
     "ios": "expo start --ios",
     "web": "expo start --web",
     "eject": "expo eject",
-    "test": "jest --watchAll"
+    "test": "jest --watchAll",
+    "prestorybook": "rnstl",
+    "storybook": "start-storybook -p 7007",
+    "build-storybook": "build-storybook"
+  },
+  "config": {
+    "react-native-storybook-loader": {
+      "searchDir": [
+        "./src",
+        "./components",
+        "./screens",
+        "./packages"
+      ],
+      "pattern": "**/*.stories.*",
+      "outputFile": "./storybook/storyLoader.js"
+    }
   },
   "jest": {
-    "preset": "jest-expo"
+    "preset": "jest-expo",
+    "transformIgnorePatterns": [
+      "node_modules/(?!(jest-)?react-native|react-clone-referenced-element|@react-native-community|expo(nent)?|@expo(nent)?/.*|react-navigation|@react-navigation/.*|@unimodules/.*|unimodules|sentry-expo|native-base)"
+    ],
+    "setupFilesAfterEnv": [
+      "<rootDir>/__mocks__/globalMock.js"
+    ]
   },
   "dependencies": {
     "@expo/vector-icons": "^12.0.0",
@@ -42,6 +63,13 @@
     "@babel/plugin-proposal-export-default-from": "^7.14.5",
     "@babel/plugin-proposal-export-namespace-from": "^7.14.5",
     "@babel/preset-typescript": "^7.15.0",
+    "@storybook/addon-actions": "^5.3",
+    "@storybook/addon-knobs": "^5.3",
+    "@storybook/addon-links": "^5.3",
+    "@storybook/addon-ondevice-actions": "^5.3.23",
+    "@storybook/addon-ondevice-knobs": "^5.3.25",
+    "@storybook/react-native": "^5.3.25",
+    "@storybook/react-native-server": "^5.3.23",
     "@testing-library/react-native": "^7.2.0",
     "@types/jest": "^27.0.1",
     "@types/react": "~16.9.35",
@@ -49,6 +77,7 @@
     "@types/styled-components-react-native": "^5.1.1",
     "@typescript-eslint/eslint-plugin": "^4.31.1",
     "@typescript-eslint/parser": "^4.31.1",
+    "babel-loader": "^8.2.2",
     "babel-plugin-styled-components": "^1.13.2",
     "eslint": "^7.2.0",
     "eslint-config-airbnb": "18.2.1",
@@ -60,6 +89,7 @@
     "eslint-plugin-react-hooks": "^1.7.0",
     "jest-expo": "~41.0.0-beta.0",
     "prettier": "^2.4.1",
+    "react-native-storybook-loader": "^2.0.4",
     "typescript": "~4.0.0"
   },
   "private": true
