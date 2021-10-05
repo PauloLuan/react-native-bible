@@ -1,6 +1,5 @@
 import * as React from 'react'
 import * as S from './details.styles'
-import { Text } from 'react-native'
 
 export interface DetailsProps {
   testId?: string
@@ -27,5 +26,16 @@ export const Details = ({
     'Depois disse Deus: "Haja entre as águas um firmamento que separe águas de águas".'
   ]
 
-  return <Text>asdfa sadfadfadf</Text>
+  return (
+    <>
+      <S.Wrapper testID={testId} {...props}>
+        <S.Headline>Genesis</S.Headline>
+        <S.SubHeadline>Subheadline</S.SubHeadline>
+
+        {data.map((text, index) => (
+          <S.Text key={index}>{text}</S.Text>
+        ))}
+      </S.Wrapper>
+    </>
+  )
 }
