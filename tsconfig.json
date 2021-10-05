@@ -5,14 +5,14 @@
     "jsx": "react-native",
     "baseUrl": ".",
     "paths": {
-      "@assets/*": ["src/assets/*"],
-      "@components/*": ["src/components/*"],
-      "@constants/*": ["src/constants/*"],
-      "@global/*": ["src/global/*"],
-      "@hooks/*": ["src/hooks/*"],
-      "@navigation/*": ["src/navigation/*"],
-      "@screens/*": ["src/screens/*"],
-      "@types/*": ["src/types/*"]
+      "@assets": ["./src/assets"],
+      "@components": ["./src/components"],
+      "@constants": ["./src/constants"],
+      "@global": ["./src/global"],
+      "@hooks": ["./src/hooks"],
+      "@navigation": ["./src/navigation"],
+      "@screens": ["./src/screens"],
+      "@types": ["./src/types"]
     }
   }
 }

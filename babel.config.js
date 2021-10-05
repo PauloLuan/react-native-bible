@@ -5,18 +5,18 @@ module.exports = function (api) {
     plugins: [
       'react-native-reanimated/plugin',
       [
-        require.resolve('babel-plugin-module-resolver'),
+        'module-resolver',
         {
           root: '.',
           alias: {
-            '@assets/*': ['src/assets/*'],
-            '@components/*': ['src/components/*'],
-            '@constants/*': ['src/constants/*'],
-            '@global/*': ['src/global/*'],
-            '@hooks/*': ['src/hooks/*'],
-            '@navigation/*': ['src/navigation/*'],
-            '@screens/*': ['src/screens/*'],
-            '@types/*': ['src/types/*']
+            '@assets': ['./src/assets'],
+            '@components': ['./src/components'],
+            '@constants': ['./src/constants'],
+            '@global': ['./src/global'],
+            '@hooks': ['./src/hooks'],
+            '@navigation': ['./src/navigation'],
+            '@screens': ['./src/screens'],
+            '@types': ['./src/types']
           }
         }
       ]
