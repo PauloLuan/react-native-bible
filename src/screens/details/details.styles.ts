@@ -27,9 +27,17 @@ export const SubHeadline = styled.Text`
   margin-bottom: ${RFValue(26)}px;
 `
 
-export const Text = styled.Text`
+export const Verse = styled.Text`
   color: black;
   font-size: ${RFValue(16)}px;
   font-weight: 300;
+  margin: 4px 0;
+`
+
+export const VerseNumber = styled.Text`
+  color: black;
+  font-size: ${RFValue(12)}px;
+  font-weight: 100;
+  font-style: italic;
   margin: 4px 0;
 `
