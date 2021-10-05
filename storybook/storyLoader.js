@@ -5,9 +5,13 @@
 
 function loadStories() {
   require('../src/screens/details/details.stories')
+  require('../src/screens/home/home.stories')
 }
 
-const stories = ['../src/screens/details/details.stories']
+const stories = [
+  '../src/screens/details/details.stories',
+  '../src/screens/home/home.stories'
+]
 
 module.exports = {
   loadStories,
