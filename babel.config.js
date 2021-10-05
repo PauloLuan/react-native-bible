@@ -1,12 +1,25 @@
 module.exports = function (api) {
   api.cache(true)
   return {
-    presets: ['babel-preset-expo', '@babel/preset-typescript'],
+    presets: ['babel-preset-expo'],
     plugins: [
       'react-native-reanimated/plugin',
-      '@babel/plugin-proposal-export-default-from',
-      '@babel/plugin-proposal-export-namespace-from',
-      ['styled-components', { ssr: true }]
+      [
+        require.resolve('babel-plugin-module-resolver'),
+        {
+          root: '.',
+          alias: {
+            '@assets/*': ['src/assets/*'],
+            '@components/*': ['src/components/*'],
+            '@constants/*': ['src/constants/*'],
+            '@global/*': ['src/global/*'],
+            '@hooks/*': ['src/hooks/*'],
+            '@navigation/*': ['src/navigation/*'],
+            '@screens/*': ['src/screens/*'],
+            '@types/*': ['src/types/*']
+          }
+        }
+      ]
     ]
   }
 }
