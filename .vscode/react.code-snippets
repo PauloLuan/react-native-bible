@@ -1,35 +1,70 @@
 {
-  "Example Cases": {
-    "body": "$1 ${1/(.*)/${1:/upcase}/}  -> ${1/(.*)/${1:/downcase}/}  ->  ${1/(.*)/${1:/pascalcase}/}  ->  ${1/(.*)/${1:/capitalize}/}",
-    "description": "how to make uppercase"
-  },
-  "styles": {
-    "prefix": "rn:styled",
+  "react:useCallback": {
     "body": [
-      "import styled from 'styled-components/native'",
-      "",
-      "export const ${1:Container} = styled.${2:View}`",
-      "  ${3}",
-      "`",
-      ""
+      "const ${1:memoizedCallback} = useCallback(",
+      "\t() => {",
+      "\t\t${2:doSomething}(${3:a}, ${4:b})",
+      "\t},",
+      "\t[${5:a}, ${6:b}],",
+      ")$0"
     ],
-    "description": "Create React Native Styled Components file"
+    "description": "React useCallback() hook",
+    "prefix": "useCallback"
   },
-
-  "componentFunctionalTypescript": {
-    "prefix": "rn:comp",
+  "react:useContext": {
+    "body": ["const $1 = useContext($2)$0"],
+    "description": "React useContext() hook",
+    "prefix": "useContext"
+  },
+  "react:useDispatch": {
+    "body": ["const $1 = $2 => dispatch($3)"],
+    "prefix": "useDispatch"
+  },
+  "react:useDispatchFunction": {
+    "body": ["const dispatch = useDispatch()"],
+    "prefix": "useDispatchFunction"
+  },
+  "react:useEffect": {
     "body": [
-      "import React from 'react'",
-      "import { View } from 'react-native'",
-      "",
-      "// import { Container } from './styles'",
-      "",
-      "const ${1:${TM_DIRECTORY/^.*(\\/|\\\\)([^(\\/|\\\\)]+)$/$2/}} = () => {",
-      "  return <S.Wrapper><S.Text>VRAU</S.Text></S.Wrapper>",
-      "}",
-      "",
-      "export ${1:${TM_DIRECTORY/^.*(\\/|\\\\)([^(\\/|\\\\)]+)$/$2/}}"
+      "useEffect(() => {",
+      "\t$1",
+      "\n\treturn cleanUp = () => {",
+      "\t\t$2",
+      "\t}",
+      "}, [${3}])$0"
     ],
-    "description": "Create React Native TypeScript Functional Component"
+    "description": "React useEffect() hook",
+    "prefix": "useEffect"
+  },
+  "react:useMemo": {
+    "body": [
+      "const ${1:memoizedValue} = useMemo(() => ${2:computeExpensiveValue}(${3:a}, ${4:b}), [${5:a}, ${6:b}])$0"
+    ],
+    "description": "React useMemo() hook",
+    "prefix": "useMemo"
+  },
+  "react:useReducer": {
+    "body": [
+      "const [${1:state},${2: dispatch}] = useReducer(state, action)",
+      "\n\treturn (",
+      "\t\t",
+      "\t)"
+    ],
+    "description": "React useReducer() hook",
+    "prefix": "useReducer"
+  },
+  "react:useRef": {
+    "body": ["const $1 = useRef($2)$0"],
+    "description": "React useRef() hook",
+    "prefix": "useRef"
+  },
+  "react:useSelector": {
+    "body": ["const $1 = useSelector(state => state.$1)"],
+    "prefix": "useSelector"
+  },
+  "react:useState": {
+    "body": ["const [${1}, set${1/(.*)/${1:/capitalize}/}] = useState($2)$0"],
+    "description": "React useState() hook",
+    "prefix": "useState"
   }
 }
