@@ -6,11 +6,13 @@
 function loadStories() {
   require('../src/screens/details/details.stories')
   require('../src/screens/home/home.stories')
+  require('../src/screens/verse-selection/verseSelection.stories')
 }
 
 const stories = [
   '../src/screens/details/details.stories',
-  '../src/screens/home/home.stories'
+  '../src/screens/home/home.stories',
+  '../src/screens/verse-selection/verseSelection.stories'
 ]
 
 module.exports = {

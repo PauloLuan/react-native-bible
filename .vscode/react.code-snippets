@@ -1,0 +1,35 @@
+{
+  "Example Cases": {
+    "body": "$1 ${1/(.*)/${1:/upcase}/}  -> ${1/(.*)/${1:/downcase}/}  ->  ${1/(.*)/${1:/pascalcase}/}  ->  ${1/(.*)/${1:/capitalize}/}",
+    "description": "how to make uppercase"
+  },
+  "styles": {
+    "prefix": "rn:styled",
+    "body": [
+      "import styled from 'styled-components/native'",
+      "",
+      "export const ${1:Container} = styled.${2:View}`",
+      "  ${3}",
+      "`",
+      ""
+    ],
+    "description": "Create React Native Styled Components file"
+  },
+
+  "componentFunctionalTypescript": {
+    "prefix": "rn:comp",
+    "body": [
+      "import React from 'react'",
+      "import { View } from 'react-native'",
+      "",
+      "// import { Container } from './styles'",
+      "",
+      "const ${1:${TM_DIRECTORY/^.*(\\/|\\\\)([^(\\/|\\\\)]+)$/$2/}} = () => {",
+      "  return <S.Wrapper><S.Text>VRAU</S.Text></S.Wrapper>",
+      "}",
+      "",
+      "export ${1:${TM_DIRECTORY/^.*(\\/|\\\\)([^(\\/|\\\\)]+)$/$2/}}"
+    ],
+    "description": "Create React Native TypeScript Functional Component"
+  }
+}
