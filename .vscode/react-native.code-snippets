@@ -17,12 +17,20 @@
     "body": [
       "import styled from 'styled-components/native'",
       "",
-      "export const ${1:Wrapper} = styled.${2:View}`",
+      "export const ${1:Wrapper} = styled.${1:View}`",
+      "  flex: 1;",
+      "  background-color: ${({ theme }) => theme.colors.background};",
       "  ${3}",
       "`",
-      ""
+      "",
+      "export const ${1:Text} = styled.${1:Text}``"
     ],
     "description": "Create React Native Styled Components file"
+  },
+  "pure:styled": {
+    "prefix": "styled:pure",
+    "body": ["export const ${1:Text} = styled.${1:Text}``"],
+    "description": "Create React Native Styled Component line"
   },
   "rn:test": {
     "prefix": "rn:test",
