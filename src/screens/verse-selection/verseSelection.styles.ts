@@ -22,8 +22,9 @@ interface ListItem {
 //   flex-wrap: wrap;
 // `
 
-export const ListItems = styled.View`
-  flex: 1;
+export const ListItems = styled.ScrollView``
+
+export const SampleView = styled.View`
   flex-direction: row;
   flex-wrap: wrap;
 `
@@ -31,8 +32,8 @@ export const ListItems = styled.View`
 export const Item = styled.TouchableOpacity`
   align-items: center;
   justify-content: center;
-  width: 36px;
-  height: 36px;
+  width: ${RFValue(62)}px;
+  height: ${RFValue(62)}px;
   margin: ${RFValue(4)}px;
   background: ${({ theme }) => theme.colors.sandMedium};
 `
@@ -45,4 +46,10 @@ export const Title = styled.Text`
   color: ${({ theme }) => theme.colors.greenDark};
   font-size: ${RFValue(36)}px;
   font-weight: bold;
+`
+
+export const SubTitle = styled.Text`
+  color: ${({ theme }) => theme.colors.greenDark};
+  font-size: ${RFValue(24)}px;
+  font-weight: 200;
 `

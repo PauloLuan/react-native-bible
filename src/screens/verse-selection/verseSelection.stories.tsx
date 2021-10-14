@@ -5,7 +5,7 @@ import { VerseSelection } from './verseSelection.component'
 const _buildMockitems = () => {
   const data = []
 
-  for (let index = 0; index < 20; index++) {
+  for (let index = 0; index < 290; index++) {
     data.push({
       id: index,
       teste: index

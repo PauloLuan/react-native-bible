@@ -11,7 +11,7 @@ export interface VerseSelectionProps {
   data: ListItem[]
 }
 
-const renderItem = ({ item, index }: { item: ListItem; index: number }) => {
+const renderItem = ({ item }: { item: ListItem; index: number }) => {
   return (
     <S.Item>
       <S.ItemText>{item.id}</S.ItemText>
@@ -27,6 +27,7 @@ export const VerseSelection = ({
   return (
     <S.Wrapper testID={testId} {...props}>
       <S.Title>Genesis</S.Title>
+      <S.SubTitle>Selecione o Capítulo:</S.SubTitle>
 
       {/* <S.ListItems<React.ElementType>
         data={data}
@@ -34,7 +35,9 @@ export const VerseSelection = ({
         renderItem={renderItem}
       ></S.ListItems> */}
 
-      <S.ListItems>{data.map((item) => renderItem({ item }))}</S.ListItems>
+      <S.ListItems>
+        <S.SampleView>{data.map((item) => renderItem({ item }))}</S.SampleView>
+      </S.ListItems>
     </S.Wrapper>
   )
 }
