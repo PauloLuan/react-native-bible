@@ -6,14 +6,9 @@ interface ListItem {
   teste: number
 }
 
-const data = [
-  { id: 1, teste: 1 },
-  { id: 2, teste: 2 },
-  { id: 3, teste: 3 }
-]
-
 export interface VerseSelectionProps {
   testId?: string
+  data: ListItem[]
 }
 
 const renderItem = ({ item, index }: { item: ListItem; index: number }) => {
@@ -26,13 +21,16 @@ const renderItem = ({ item, index }: { item: ListItem; index: number }) => {
 
 export const VerseSelection = ({
   testId = 'component-verse-selection-id',
+  data,
   ...props
 }: VerseSelectionProps) => {
   return (
     <S.Wrapper testID={testId} {...props}>
+      <S.Title>Genesis</S.Title>
+
       <S.ListItems<React.ElementType>
         data={data}
-        keyExtractor={(item: ListItem) => item.id}
+        keyExtractor={(item: ListItem) => item.id.toString()}
         renderItem={renderItem}
       ></S.ListItems>
     </S.Wrapper>
