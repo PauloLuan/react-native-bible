@@ -28,11 +28,13 @@ export const VerseSelection = ({
     <S.Wrapper testID={testId} {...props}>
       <S.Title>Genesis</S.Title>
 
-      <S.ListItems<React.ElementType>
+      {/* <S.ListItems<React.ElementType>
         data={data}
         keyExtractor={(item: ListItem) => item.id.toString()}
         renderItem={renderItem}
-      ></S.ListItems>
+      ></S.ListItems> */}
+
+      <S.ListItems>{data.map((item) => renderItem({ item }))}</S.ListItems>
     </S.Wrapper>
   )
 }

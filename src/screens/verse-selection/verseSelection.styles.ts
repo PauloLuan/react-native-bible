@@ -13,19 +13,22 @@ interface ListItem {
   teste: number
 }
 
-export const ListItems = styled(FlatList as new () => FlatList<ListItem>).attrs(
-  {
-    numColumns: 6
-  }
-)`
+// export const ListItems = styled(FlatList as new () => FlatList<ListItem>).attrs(
+//   {
+//     numColumns: 6
+//   }
+// )`
+//   flex-direction: row;
+//   flex-wrap: wrap;
+// `
+
+export const ListItems = styled.View`
+  flex: 1;
   flex-direction: row;
   flex-wrap: wrap;
 `
 
 export const Item = styled.TouchableOpacity`
-  flex: 1;
-  /* flex-wrap: wrap; */
-  flex-direction: row;
   align-items: center;
   justify-content: center;
   width: 36px;
