@@ -2,7 +2,7 @@ import { storiesOf } from '@storybook/react-native'
 import React from 'react'
 import { VerseSelection } from './verseSelection.component'
 
-const _buildMockitems = () => {
+export const buildMockitems = () => {
   const data = []
 
   for (let index = 0; index < 290; index++) {
@@ -16,7 +16,7 @@ const _buildMockitems = () => {
 }
 
 const args = {
-  data: _buildMockitems()
+  data: buildMockitems()
 }
 
 storiesOf('Components/VerseSelection', module).add('default: ', () => (

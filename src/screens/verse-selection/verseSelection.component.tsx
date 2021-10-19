@@ -11,7 +11,7 @@ export interface VerseSelectionProps {
   data: ListItem[]
 }
 
-const renderItem = ({ item }: { item: ListItem; index: number }) => {
+const renderItem = ({ item }: { item: ListItem }) => {
   return (
     <S.Item>
       <S.ItemText>{item.id}</S.ItemText>
@@ -36,7 +36,7 @@ export const VerseSelection = ({
       ></S.ListItems> */}
 
       <S.ListItems>
-        <S.SampleView>{data.map((item) => renderItem({ item }))}</S.SampleView>
+        <S.ListView>{data.map((item) => renderItem({ item }))}</S.ListView>
       </S.ListItems>
     </S.Wrapper>
   )

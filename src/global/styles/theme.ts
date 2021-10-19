@@ -9,8 +9,8 @@ export default {
     greenDark: '#6b705c'
   },
   fonts: {
-    primaryLight: '',
-    primaryMedium: '',
-    primaryBold: ''
+    primaryLight: 'sens-light',
+    primaryMedium: 'sens-regular',
+    primaryBold: 'sens-bold'
   }
 }

@@ -24,7 +24,7 @@ interface ListItem {
 
 export const ListItems = styled.ScrollView``
 
-export const SampleView = styled.View`
+export const ListView = styled.View`
   flex-direction: row;
   flex-wrap: wrap;
 `
