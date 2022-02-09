@@ -41,31 +41,19 @@ Open [http://localhost:9999](http://localhost:9999) to check your stories.
 
 ## Commands
 
-- `dev`: runs your application on the emulator and also starts the storybook
-- `build`: creates the production build version
-- `start`: starts a simple server with the build production code
-- `lint`: runs the linter in all components and pages
-- `test`: runs jest to test all components and pages
-- `test:watch`: runs jest in watch mode
-- `typecheck`: check typescript types
-- `generate`: creates a component scaffold (you can also choose between styled component and chackra component)
-- `storybook`: runs storybook on `localhost:6006`
-- `build-storybook`: create the build version of storybook
-
-
-`dev`: starts both the emulator and the storybook server.
-`start`: starts the app using expo
-`ios`: starts expo for ios
-`ios:cache`: remove all watchman metadata before start with ios
-`cache:clean:hard`: resets all unversioned metadata and starts the app
-`format`: runs eslint and fix everything
-`android`: starts the app for android.
-`web`: starts the app for web
-`eject`: eject from expo
-`test`: runs the unit tests with jest
-`prestorybook`: runs the script `rnstl`in which updates all new storybook files.
-`storybook`: starts the storybook server.
-`build-storybook`: build the storybook.
+- `dev`: starts both the emulator and the storybook server.
+- `start`: starts the app using expo
+- `ios`: starts expo for ios
+- `ios:cache`: remove all watchman metadata before start with ios
+- `cache:clean:hard`: resets all unversioned metadata and starts the app
+- `format`: runs eslint and fix everything
+- `android`: starts the app for android.
+- `web`: starts the app for web
+- `eject`: eject from expo
+- `test`: runs the unit tests with jest
+- `prestorybook`: runs the script `rnstl`in which updates all new storybook files.
+- `storybook`: starts the storybook server.
+- `build-storybook`: build the storybook.
 
 ## What is inside?
 
