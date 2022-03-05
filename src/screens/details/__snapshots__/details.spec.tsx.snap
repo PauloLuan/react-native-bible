@@ -24,7 +24,7 @@ exports[`<Details /> should render the Details component 1`] = `
     style={
       Array [
         Object {
-          "fontFamily": "Arial",
+          "fontFamily": "sens-bold",
           "fontSize": 98,
           "fontWeight": "bold",
         },
@@ -38,9 +38,9 @@ exports[`<Details /> should render the Details component 1`] = `
       Array [
         Object {
           "color": "black",
+          "fontFamily": "sens-light",
           "fontSize": 43,
           "fontStyle": "italic",
-          "fontWeight": "200",
           "marginBottom": 51,
         },
       ]
@@ -53,8 +53,10 @@ exports[`<Details /> should render the Details component 1`] = `
       Array [
         Object {
           "color": "black",
-          "fontSize": 31,
+          "fontFamily": "sens-regular",
+          "fontSize": 35,
           "fontWeight": "300",
+          "lineHeight": 24,
           "marginBottom": 4,
           "marginLeft": 0,
           "marginRight": 0,
@@ -68,6 +70,7 @@ exports[`<Details /> should render the Details component 1`] = `
         Array [
           Object {
             "color": "black",
+            "fontFamily": "sens-light",
             "fontSize": 24,
             "fontStyle": "italic",
             "fontWeight": "100",
@@ -90,8 +93,10 @@ exports[`<Details /> should render the Details component 1`] = `
       Array [
         Object {
           "color": "black",
-          "fontSize": 31,
+          "fontFamily": "sens-regular",
+          "fontSize": 35,
           "fontWeight": "300",
+          "lineHeight": 24,
           "marginBottom": 4,
           "marginLeft": 0,
           "marginRight": 0,
@@ -105,6 +110,7 @@ exports[`<Details /> should render the Details component 1`] = `
         Array [
           Object {
             "color": "black",
+            "fontFamily": "sens-light",
             "fontSize": 24,
             "fontStyle": "italic",
             "fontWeight": "100",
