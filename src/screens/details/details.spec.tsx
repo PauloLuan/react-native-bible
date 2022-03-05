@@ -8,7 +8,7 @@ describe('<Details />', () => {
   const testId = 'component-details-id'
 
   it('should render the Details component', async () => {
-    const { queryByTestId, toJSON } = renderWithTheme(
+    const { queryByTestId } = renderWithTheme(
       <Details
         testId={testId}
         headline="teste"
@@ -17,6 +17,5 @@ describe('<Details />', () => {
       />
     )
     await waitFor(() => expect(queryByTestId(testId)).toBeTruthy())
-    expect(toJSON()).toMatchSnapshot()
   })
 })

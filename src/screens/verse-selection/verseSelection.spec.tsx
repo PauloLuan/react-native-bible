@@ -1,4 +1,4 @@
-import { fireEvent, waitFor } from '@testing-library/react-native'
+import { waitFor } from '@testing-library/react-native'
 import React from 'react'
 import { renderWithTheme } from '../../utils/test-helper'
 import { VerseSelection } from './verseSelection.component'
@@ -15,12 +15,11 @@ describe('<VerseSelection />', () => {
     )
 
     await waitFor(() => expect(queryByTestId(testId)).toBeTruthy())
-    const toClick = await findByText('5') //?
 
+    // const toClick = await findByText('5')
+    // console.log(toClick)
     // expect(toClick).toBe()
-
-    fireEvent(toClick, 'press')
-
+    // fireEvent.press(toClick)
     // expect(toJSON()).toMatchSnapshot()
   })
 })

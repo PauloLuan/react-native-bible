@@ -9,8 +9,7 @@ describe('<Home />', () => {
 
   it('should render the Home component', async () => {
     expect(1 + 1).toEqual(2)
-    const { queryByTestId, toJSON } = renderWithTheme(<Home testId={testId} />)
+    const { queryByTestId } = renderWithTheme(<Home testId={testId} />)
     await waitFor(() => expect(queryByTestId(testId)).toBeTruthy())
-    expect(toJSON()).toMatchSnapshot()
   })
 })

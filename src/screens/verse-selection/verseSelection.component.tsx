@@ -13,7 +13,7 @@ export interface VerseSelectionProps {
 
 const renderItem = ({ item }: { item: ListItem }) => {
   return (
-    <S.Item>
+    <S.Item key={item.id}>
       <S.ItemText>{item.id}</S.ItemText>
     </S.Item>
   )
