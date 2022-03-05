@@ -3,7 +3,7 @@ import styled, { css } from 'styled-components/native'
 
 // import { HomeProps } from '.'
 
-export const Wrapper = styled.View`
+export const Wrapper = styled.ScrollView`
   ${() => css`
     flex: 1;
     background-color: ${({ theme }) => theme.colors.background};
@@ -28,7 +28,7 @@ export const SubHeadline = styled.Text`
 `
 
 export const Verse = styled.Text`
-  font-family: ${({ theme }) => theme.fonts.primaryMedium};
+  /* font-family: ${({ theme }) => theme.fonts.primaryMedium}; */
   color: black;
   font-size: ${RFValue(18)}px;
   font-weight: 300;
